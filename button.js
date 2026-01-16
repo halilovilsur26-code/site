@@ -2,7 +2,7 @@
 document.querySelectorAll('.watchBtn').forEach(btn => {
     const id = btn.dataset.id;
     
-    btn.textContent = localStorage.getItem(id) === 'true' ? '🤍' : '❤️';
+    btn.textContent = localStorage.getItem(id) === 'true' ? '❤️' : '🤍';
 
     btn.onclick = () => {
         const willBeWhite = btn.textContent === '❤️';
